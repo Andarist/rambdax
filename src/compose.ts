@@ -1,4 +1,4 @@
-import { confirm } from './_confirm'
+import { confirm } from './internals/_confirm'
 
 export function compose<T> (...fns: Function[]) {
   return result => {

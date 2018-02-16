@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _confirm_1 = require("./_confirm");
+const _confirm_1 = require("./internals/_confirm");
 function compose(...fns) {
     return result => {
         const list = fns.slice();
