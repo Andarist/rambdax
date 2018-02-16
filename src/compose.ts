@@ -6,7 +6,7 @@ export function compose<T> (...fns: Function[]) {
 
     while (list.length > 0) {
       const fn = list.pop()
-      if(confirm(fn)){
+      if(confirm<Function, undefined>(fn)){
         result = fn(result)
       }
     }

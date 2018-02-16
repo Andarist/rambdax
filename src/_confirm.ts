@@ -1,3 +1,5 @@
-export function confirm<Output>(input: Output | undefined) : input is Output{
+export function confirm<Output, Reject>(
+  input: Output | Reject
+) : input is Output{
   return true
 }

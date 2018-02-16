@@ -1,17 +1,15 @@
-export type X = (holder: number) => number
-
-function isX(input: number | X): input is number {
-  return true
-}
+import { confirm } from './_confirm'
+export type Add = (holder: number) => number
 
 export function add(
   x: number,
   y: number | undefined
-): number | X {
+): number | Add {
   if(y === undefined){
     return (yHolder: number): number => {
+
       const result = add(x, yHolder)
-      if(isX(result)){
+      if(confirm<number, Add>(result)){
         return result
       }
       return Infinity
