@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./dist/",
+    "sourceMap": false,
+    "strictNullChecks": true,
+    "target": "es6",
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": [
+    "node_modules",
+    "./src/**/*.spec.ts"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
